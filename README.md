@@ -1,1 +1,1 @@
-Link to my portfolio: ![](https://oskariruo.github.io./)
+My current porfolio: ![Click here!](https://oskariruo.github.io./)
