@@ -1,185 +1,151 @@
-* {
-    scroll-behavior: smooth;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, hr, footer {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
 }
 
-section {
-    background-color: white;
-}
-
-.hero {
-    background-color: #1c1d25;
-    animation: bg-animation;
-    animation-duration: 10s;
-    height: 100vh;
-    color: white;
-    font-size: 30px;
-}
-
-@keyframes bg-animation {
-    0%   {background-color: #1c1d25;}
-    20%  {background-color: red;}
-    50%  {background-color: blue;}
-    80% {background-color: purple;}
-    100%   {background-color: #1c1d25;}
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
-
-li {
-    text-decoration: none;
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 90px;
-    margin: 0;
-}
-
-h2 {
-    font-size: 50px;
+    font-size: 2.5em;
+    margin-bottom: 5px;
 }
 
 p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 1.2em;
 }
 
-#hh-link {
-    color:darkblue;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.hero-area {
+/* About Me Section */
+#about-me {
     display: flex;
-    height: 70%;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero-text {
-    margin-left: 80px;
-    margin-bottom: 200px;
+.information {
+    flex: 1;
 }
 
+.information h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.information hr {
+    border-color: #4d4d4d;
+}
+
+.information p {
+    font-size: 1.2em;
+}
 
 .socials {
     display: flex;
-    justify-content: center;
-    height: 30%;
-}
-
-.logo {
-    height: 80px;
-    margin: 30px;
-}
-.social {
-    margin: 20px;
-}
-
-.sub-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-
-.sub-section-alternative {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-}
-
-.sub-section-skills{
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
-}
-
-.headshot {
-    width: 300px;
-    border-radius: 100px;
-    margin-left: 80px;
-}
-
-.headshot-container {
-    display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
-.skills-container {
+.socials p {
+    margin-right: 10px;
+}
+
+.social {
+    margin-right: 15px;
+}
+
+/* Skills Section */
+#skills {
+    text-align: center;
+}
+
+#skills-container {
+    margin-top: 20px;
+}
+
+#skills-container p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+#skills-container li {
+    font-size: 1.2em;
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+/* Featured Projects Section */
+#projects {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .project-card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
     width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px rgb(197, 195, 195);
-    border-radius: 20px;
-    margin: 10px;
-}
-
-.project-card:hover {
-    box-shadow: 5px 5px 20px rgb(100, 100, 100);
-}
-
-
-
-.project-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
-    margin-top: 25px;
-    width: 100px;
-    border-radius: 25px;
+    width: 100%;
+    border-radius: 8px;
 }
 
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
+.project-card h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.project-card .subtext {
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .project-link {
+    color: 	#880808;
     text-decoration: none;
-    color: #ef744b;
+    font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #2d2d2d;
+    border-radius: 5px;
 }
 
+.social a:hover {
+    transform: translateY(-3px);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer:hover {
+    background-color: #999;
+    color: #ffffff;
+}
